@@ -15,6 +15,31 @@
   </header>
 
   <main class="container">
+
+    <!-- 👥 SECCIÓN EQUIPO -->
+    <section class="equipo">
+      <h2>Equipo</h2>
+      <div class="grid equipo-grid">
+        <figure>
+          <img src="img/Quintero.png" alt="Integrante 1">
+          <figcaption>Andrés Quintero</figcaption>
+        </figure>
+        <figure>
+          <img src="img/Cardozo.png" alt="Integrante 2">
+          <figcaption>Andrés Cardozo</figcaption>
+        </figure>
+        <figure>
+          <img src="img/Felipe.png" alt="Integrante 3">
+          <figcaption>Andrés Martinez</figcaption>
+        </figure>
+        <figure>
+          <img src="img/Sebastian.png" alt="Integrante 4">
+          <figcaption>Sebastian Rodriguez</figcaption>
+        </figure>
+      </div>
+    </section>
+    <!-- 🔚 FIN EQUIPO -->
+
     <section class="about">
       <h2>¿Qué es Hire-U?</h2>
       <p>
@@ -63,7 +88,6 @@
       </div>
     </section>
 
-    <!-- NUEVA SECCIÓN DE IMÁGENES -->
     <section class="extra-gallery">
       <h2>Galería complementaria</h2>
       <p>En esta sección se presentan más imágenes del proceso de diseño, eventos y desarrollo del proyecto Hire-U.</p>
@@ -71,72 +95,89 @@
       <div class="grid">
         <figure>
           <img src="img/Muckup laptop 1.png" alt="Diseño adicional 1">
-          <figcaption>Muckup laptop inicio de sesion</figcaption>
+          <figcaption>Muckup laptop inicio de sesión</figcaption>
         </figure>
         <figure>
           <img src="img/Muckup laptop 2.png" alt="Diseño adicional 2">
-          <figcaption>Muckup laptop registarse</figcaption>
+          <figcaption>Muckup laptop registrarse</figcaption>
         </figure>
         <figure>
           <img src="img/Muckup laptop 3.png" alt="Diseño adicional 3">
-          <figcaption>Muckup laptop Olvido su correo o contraseña — Configuración</figcaption>
+          <figcaption>Muckup laptop olvido su contraseña</figcaption>
         </figure>
         <figure>
           <img src="img/Muckup laptop 4.png" alt="Diseño adicional 4">
-          <figcaption>Muckup primera interfaz de pagina HIRE-U</figcaption>
+          <figcaption>Muckup primera interfaz Hire-U</figcaption>
         </figure>
       </div>
     </section>
-
-    <!-- 🌐 NUEVA SECCIÓN PDF -->
-    <section class="pdf-section">
-      <h2>Documento del Proyecto</h2>
-      <p>Consulta o descarga el documento completo del proyecto <strong>Hire-U</strong> en formato PDF.</p>
-
-      <div class="pdf-viewer">
-        <iframe src="img/Documento 2.0.pdf" title="Documento PDF Hire-U"></iframe>
-      </div>
-
-      <a href="img/Documento 2.0.pdf" target="_blank" class="pdf-btn">Ver o Descargar PDF</a>
-    </section>
-    <!-- FIN SECCIÓN PDF -->
-    <!-- FIN NUEVA SECCIÓN -->
 
     <section class="video-section">
       <h4>Video speech</h4>
       <video width="800" height="400" controls>
-        <source src="img/Video.mp4" type="video/mp4">
+        <source src="img/video speech.mp4" type="video/mp4">
       </video>
     </section>
   </main>
-<section class="diccionario-section">
-  <h2>Diccionario de Datos</h2>
-  <p>Consulta el diccionario de datos del proyecto <strong>Hire-U</strong> para conocer las tablas, columnas y descripciones.</p>
-  <button onclick="location.href='hireu.html'" class="btn-diccionario">Ver Diccionario de Datos</button>
-</section>
 
-<style>
-.diccionario-section {
-  text-align: center;
-  margin: 50px auto;
-  padding: 30px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  max-width: 700px;
-}
-.diccionario-section h2 { color: #ea7b1a; margin-bottom: 10px; }
-.diccionario-section p { color: #666; margin-bottom: 20px; }
-.btn-diccionario {
-  background: #ea7b1a; color: #fff; border: none;
-  padding: 12px 24px; border-radius: 8px; cursor: pointer;
-  transition: 0.3s;
-}
-.btn-diccionario:hover { background: #cf6b15; transform: scale(1.05); }
-</style>
+  <section class="diccionario-section">
+    <h2>Diccionario de Datos</h2>
+    <p>Consulta el diccionario de datos del proyecto <strong>Hire-U</strong> para conocer las tablas, columnas y descripciones.</p>
+    <button onclick="location.href='hireu.html'" class="btn-diccionario">Ver Diccionario de Datos</button>
+  </section>
 
-      </button>
-    </section>
+  <style>
+  /* 👥 Estilos para sección Equipo */
+  .equipo {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .equipo h2 {
+    color: #ea7b1a;
+    margin-bottom: 15px;
+  }
+  .equipo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .equipo-grid figure {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  .equipo-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .equipo-grid figcaption {
+    margin-top: 8px;
+    color: #666;
+    font-weight: 600;
+  }
+
+  /* 📘 Estilos Diccionario (compacto) */
+  .diccionario-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+  }
+  .diccionario-section h2 { color: #ea7b1a; margin-bottom: 10px; }
+  .diccionario-section p { color: #666; margin-bottom: 20px; }
+  .btn-diccionario {
+    background: #ea7b1a; color: #fff; border: none;
+    padding: 12px 24px; border-radius: 8px; cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn-diccionario:hover { background: #cf6b15; transform: scale(1.05); }
+  </style>
+
   <footer class="site-footer">
     <div>
       <p>Proyecto Hire-U — Universidad San Buenaventura — Autores: Andrés Cardozo, Andrés F. Martínez, Andrés F. Quintero.</p>
@@ -166,9 +207,4 @@
   </script>
 </body>
 </html>
-
-
-
-
-
 
