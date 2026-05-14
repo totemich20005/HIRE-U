@@ -3,412 +3,352 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diccionario de Datos - Hireu</title>
+<title>Diccionario de Datos - Hire-U</title>
  
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color:#f4f6f9;
-            margin:0;
-            padding:20px;
-            color:#333;
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
         }
  
         h1{
-            text-align:center;
-            color:#f17908;
+            text-align: center;
+            color: #333;
         }
  
         h2{
-            background:#f17908;
-            color:white;
-            padding:10px;
-            border-radius:5px;
+            color: #0d6efd;
+            margin-top: 40px;
         }
  
         table{
-            width:100%;
-            border-collapse:collapse;
-            margin-bottom:30px;
-            background:white;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: white;
         }
  
-        table th{
-            background:#f17908;
-            color:white;
-            padding:12px;
-            border:1px solid #ccc;
+        th, td{
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
         }
  
-        table td{
-            padding:10px;
-            border:1px solid #ccc;
+        th{
+            background-color: #0d6efd;
+            color: white;
         }
  
-        table tr:nth-child(even){
-            background:#f2f2f2;
-        }
- 
-        .contenedor{
-            width:95%;
-            margin:auto;
-        }
- 
-        .relacion{
-            background:white;
-            padding:15px;
-            border-radius:5px;
-            margin-bottom:20px;
-        }
- 
-        ul{
-            background:white;
-            padding:20px;
-            border-radius:5px;
-        }
- 
-        li{
-            margin-bottom:8px;
+        tr:nth-child(even){
+            background-color: #f2f2f2;
         }
 </style>
 </head>
  
 <body>
  
-<div class="contenedor">
+    <h1>Diccionario de Datos - Proyecto Hire-U</h1>
  
-    <h1>Diccionario de Datos - Base de Datos Hireu</h1>
- 
-    <!-- TABLA EMPRESA -->
-<h2>Tabla: Empresa</h2>
+    <!-- TABLA EGRESADOS -->
+<h2>Tabla: egresados</h2>
  
     <table>
 <tr>
 <th>Campo</th>
-<th>Tipo</th>
-<th>Restricción</th>
+<th>Tipo de Dato</th>
 <th>Descripción</th>
 </tr>
  
         <tr>
-<td>EmpresaId</td>
+<td>idegresados</td>
 <td>INT</td>
-<td>PK, AUTO_INCREMENT</td>
-<td>Identificador único de la empresa</td>
+<td>Identificador único del egresado</td>
 </tr>
  
         <tr>
-<td>Nombre</td>
-<td>VARCHAR(150)</td>
-<td>NOT NULL</td>
-<td>Nombre de la empresa</td>
-</tr>
- 
-        <tr>
-<td>Sector</td>
+<td>nombre</td>
 <td>VARCHAR(100)</td>
-<td>-</td>
-<td>Sector económico</td>
-</tr>
- 
-        <tr>
-<td>Descripcion</td>
-<td>TEXT</td>
-<td>-</td>
-<td>Descripción empresarial</td>
-</tr>
- 
-        <tr>
-<td>Ubicacion</td>
-<td>VARCHAR(150)</td>
-<td>-</td>
-<td>Ubicación de la empresa</td>
-</tr>
- 
-        <tr>
-<td>CorreoContacto</td>
-<td>VARCHAR(150)</td>
-<td>-</td>
-<td>Correo empresarial</td>
-</tr>
-</table>
- 
-    <!-- TABLA EGRESADO -->
-<h2>Tabla: Egresado</h2>
- 
-    <table>
-<tr>
-<th>Campo</th>
-<th>Tipo</th>
-<th>Restricción</th>
-<th>Descripción</th>
-</tr>
- 
-        <tr>
-<td>EgresadoId</td>
-<td>INT</td>
-<td>PK, AUTO_INCREMENT</td>
-<td>Identificador del egresado</td>
-</tr>
- 
-        <tr>
-<td>Nombre</td>
-<td>VARCHAR(100)</td>
-<td>NOT NULL</td>
 <td>Nombre del egresado</td>
 </tr>
  
         <tr>
-<td>Apellido</td>
+<td>apellido</td>
 <td>VARCHAR(100)</td>
-<td>-</td>
 <td>Apellido del egresado</td>
 </tr>
  
         <tr>
-<td>CorreoInstitucional</td>
-<td>VARCHAR(150)</td>
-<td>-</td>
-<td>Correo institucional</td>
-</tr>
- 
-        <tr>
-<td>ProgramaAcademico</td>
+<td>correoinstitucional</td>
 <td>VARCHAR(100)</td>
-<td>-</td>
-<td>Programa académico</td>
+<td>Correo electrónico institucional</td>
 </tr>
  
         <tr>
-<td>AnioGraduacion</td>
+<td>programacademico</td>
+<td>VARCHAR(150)</td>
+<td>Programa académico cursado</td>
+</tr>
+ 
+        <tr>
+<td>anogrado</td>
 <td>YEAR</td>
-<td>-</td>
 <td>Año de graduación</td>
 </tr>
  
         <tr>
-<td>FotoPerfil</td>
+<td>fotoperfil</td>
 <td>VARCHAR(255)</td>
-<td>-</td>
-<td>Foto del egresado</td>
+<td>Imagen de perfil del usuario</td>
 </tr>
  
         <tr>
-<td>PerfilProfesional</td>
+<td>perfilprofesional</td>
 <td>TEXT</td>
-<td>-</td>
-<td>Descripción profesional</td>
+<td>Descripción profesional del egresado</td>
+</tr>
+</table>
+ 
+    <!-- TABLA EMPRESAS -->
+<h2>Tabla: empresas</h2>
+ 
+    <table>
+<tr>
+<th>Campo</th>
+<th>Tipo de Dato</th>
+<th>Descripción</th>
+</tr>
+ 
+        <tr>
+<td>idempresas</td>
+<td>INT</td>
+<td>Identificador único de la empresa</td>
+</tr>
+ 
+        <tr>
+<td>nombre</td>
+<td>VARCHAR(150)</td>
+<td>Nombre de la empresa</td>
+</tr>
+ 
+        <tr>
+<td>sector</td>
+<td>VARCHAR(150)</td>
+<td>Sector empresarial</td>
+</tr>
+ 
+        <tr>
+<td>descripcion</td>
+<td>TEXT</td>
+<td>Descripción de la empresa</td>
+</tr>
+ 
+        <tr>
+<td>ubicacion</td>
+<td>VARCHAR(150)</td>
+<td>Ubicación de la empresa</td>
+</tr>
+ 
+        <tr>
+<td>correocontacto</td>
+<td>VARCHAR(150)</td>
+<td>Correo de contacto empresarial</td>
 </tr>
 </table>
  
     <!-- TABLA OFERTA LABORAL -->
-<h2>Tabla: OfertaLaboral</h2>
+<h2>Tabla: oferta_laboral</h2>
  
     <table>
 <tr>
 <th>Campo</th>
-<th>Tipo</th>
-<th>Restricción</th>
+<th>Tipo de Dato</th>
 <th>Descripción</th>
 </tr>
  
         <tr>
-<td>OfertaLaboralId</td>
+<td>idofertalaboral</td>
 <td>INT</td>
-<td>PK</td>
-<td>Identificador de la oferta</td>
+<td>Identificador único de la oferta laboral</td>
 </tr>
  
         <tr>
-<td>EmpresaId</td>
+<td>idempresas</td>
 <td>INT</td>
-<td>FK</td>
 <td>Empresa que publica la oferta</td>
 </tr>
  
         <tr>
-<td>Titulo</td>
+<td>titulo</td>
 <td>VARCHAR(130)</td>
-<td>-</td>
-<td>Título de la vacante</td>
+<td>Título de la oferta laboral</td>
 </tr>
  
         <tr>
-<td>Descripcion</td>
+<td>descripcion</td>
 <td>TEXT</td>
-<td>-</td>
 <td>Descripción de la vacante</td>
 </tr>
  
         <tr>
-<td>Ubicacion</td>
+<td>ubicacion</td>
 <td>VARCHAR(150)</td>
-<td>-</td>
-<td>Ubicación laboral</td>
+<td>Ubicación del empleo</td>
 </tr>
  
         <tr>
-<td>TipoContrato</td>
-<td>VARCHAR(100)</td>
-<td>-</td>
-<td>Tipo de contrato</td>
-</tr>
- 
-        <tr>
-<td>Salario</td>
+<td>salario</td>
 <td>DECIMAL(12,2)</td>
-<td>-</td>
 <td>Salario ofrecido</td>
 </tr>
  
         <tr>
-<td>FechaInicio</td>
+<td>fechafinal</td>
 <td>DATE</td>
-<td>-</td>
-<td>Fecha de inicio</td>
+<td>Fecha límite de aplicación</td>
 </tr>
  
         <tr>
-<td>FechaFin</td>
-<td>DATE</td>
-<td>-</td>
-<td>Fecha de finalización</td>
-</tr>
- 
-        <tr>
-<td>Estado</td>
-<td>VARCHAR(50)</td>
-<td>-</td>
-<td>Estado de la vacante</td>
+<td>estado</td>
+<td>ENUM</td>
+<td>Estado de la oferta laboral</td>
 </tr>
 </table>
  
-    <!-- TABLA AUDITORIA -->
-<h2>Tabla: Auditoria</h2>
+    <!-- TABLA POSTULACIONES -->
+<h2>Tabla: postulaciones</h2>
  
     <table>
 <tr>
 <th>Campo</th>
-<th>Tipo</th>
-<th>Restricción</th>
+<th>Tipo de Dato</th>
 <th>Descripción</th>
 </tr>
  
         <tr>
-<td>AuditoriaId</td>
+<td>idpostulaciones</td>
 <td>INT</td>
-<td>PK</td>
-<td>Identificador de auditoría</td>
+<td>Identificador de la postulación</td>
 </tr>
  
         <tr>
-<td>TablaAfectada</td>
-<td>VARCHAR(100)</td>
-<td>-</td>
-<td>Tabla modificada</td>
-</tr>
- 
-        <tr>
-<td>AccionRealizada</td>
-<td>VARCHAR(50)</td>
-<td>-</td>
-<td>INSERT, UPDATE o DELETE</td>
-</tr>
- 
-        <tr>
-<td>RegistroId</td>
+<td>idegresados</td>
 <td>INT</td>
-<td>-</td>
-<td>ID afectado</td>
+<td>Egresado que aplica</td>
 </tr>
  
         <tr>
-<td>FechaMovimiento</td>
-<td>DATETIME</td>
-<td>DEFAULT CURRENT_TIMESTAMP</td>
-<td>Fecha del movimiento</td>
+<td>idofertalaboral</td>
+<td>INT</td>
+<td>Oferta laboral seleccionada</td>
 </tr>
  
         <tr>
-<td>UsuarioBD</td>
-<td>VARCHAR(100)</td>
-<td>-</td>
-<td>Usuario de MySQL</td>
+<td>fechapostulacion</td>
+<td>DATE</td>
+<td>Fecha de la postulación</td>
 </tr>
  
         <tr>
-<td>DescripcionMovimiento</td>
+<td>contenido</td>
 <td>TEXT</td>
-<td>-</td>
-<td>Detalle del cambio</td>
+<td>Mensaje o descripción enviada</td>
 </tr>
 </table>
  
-    <!-- PROCEDIMIENTOS -->
-<h2>Procedimientos Almacenados</h2>
+    <!-- TABLA ESTUDIOS -->
+<h2>Tabla: estudios</h2>
  
-    <ul>
-<li>InsertarEmpresaId()</li>
-<li>ConsultarEmpresaId()</li>
-<li>ActualizarEmpresaId()</li>
-<li>EliminarEmpresaId()</li>
+    <table>
+<tr>
+<th>Campo</th>
+<th>Tipo de Dato</th>
+<th>Descripción</th>
+</tr>
  
-        <li>InsertarEgresadoId()</li>
-<li>ConsultarEgresadoId()</li>
-<li>ActualizarEgresadoId()</li>
-<li>EliminarEgresadoId()</li>
+        <tr>
+<td>idestudios</td>
+<td>INT</td>
+<td>Identificador del estudio</td>
+</tr>
  
-        <li>InsertarOfertaLaboralId()</li>
-<li>ConsultarOfertaLaboralId()</li>
-<li>ActualizarOfertaLaboralId()</li>
-<li>EliminarOfertaLaboralId()</li>
+        <tr>
+<td>idegresados</td>
+<td>INT</td>
+<td>Egresado relacionado</td>
+</tr>
  
-        <li>InsertarPostulacionId()</li>
-<li>ConsultarPostulacionId()</li>
-<li>ActualizarPostulacionId()</li>
-<li>EliminarPostulacionId()</li>
+        <tr>
+<td>nivelacademico</td>
+<td>ENUM</td>
+<td>Nivel académico alcanzado</td>
+</tr>
  
-        <li>InsertarExperienciaId()</li>
-<li>ConsultarExperienciaId()</li>
-<li>ActualizarExperienciaId()</li>
-<li>EliminarExperienciaId()</li>
+        <tr>
+<td>institucion</td>
+<td>VARCHAR(150)</td>
+<td>Institución educativa</td>
+</tr>
  
-        <li>InsertarEstudiosId()</li>
-<li>ConsultarEstudiosId()</li>
-<li>ActualizarEstudiosId()</li>
-<li>EliminarEstudiosId()</li>
-</ul>
+        <tr>
+<td>programa</td>
+<td>VARCHAR(150)</td>
+<td>Programa académico cursado</td>
+</tr>
  
-    <!-- TRIGGERS -->
-<h2>Triggers</h2>
+        <tr>
+<td>fechainicio</td>
+<td>DATE</td>
+<td>Fecha de inicio del estudio</td>
+</tr>
  
-    <ul>
-<li>trg_empresa_insert</li>
-<li>trg_empresa_update</li>
-<li>trg_empresa_delete</li>
+        <tr>
+<td>fechafin</td>
+<td>DATE</td>
+<td>Fecha de finalización</td>
+</tr>
+</table>
  
-        <li>trg_egresado_insert</li>
-<li>trg_egresado_update</li>
-<li>trg_egresado_delete</li>
+    <!-- TABLA EXPERIENCIA -->
+<h2>Tabla: experiencia</h2>
  
-        <li>trg_oferta_insert</li>
-<li>trg_oferta_update</li>
-<li>trg_oferta_delete</li>
+    <table>
+<tr>
+<th>Campo</th>
+<th>Tipo de Dato</th>
+<th>Descripción</th>
+</tr>
  
-        <li>trg_postulacion_insert</li>
-<li>trg_postulacion_update</li>
-<li>trg_postulacion_delete</li>
+        <tr>
+<td>idexperiencia</td>
+<td>INT</td>
+<td>Identificador de experiencia laboral</td>
+</tr>
  
-        <li>trg_experiencia_insert</li>
-<li>trg_experiencia_update</li>
-<li>trg_experiencia_delete</li>
+        <tr>
+<td>idegresados</td>
+<td>INT</td>
+<td>Egresado relacionado</td>
+</tr>
  
-        <li>trg_estudios_insert</li>
-<li>trg_estudios_update</li>
-<li>trg_estudios_delete</li>
-</ul>
+        <tr>
+<td>empresa</td>
+<td>VARCHAR(150)</td>
+<td>Empresa donde trabajó</td>
+</tr>
  
-</div>
+        <tr>
+<td>cargo</td>
+<td>VARCHAR(150)</td>
+<td>Cargo desempeñado</td>
+</tr>
+ 
+        <tr>
+<td>descripcion</td>
+<td>TEXT</td>
+<td>Descripción de funciones realizadas</td>
+</tr>
+</table>
  
 </body>
 </html>
