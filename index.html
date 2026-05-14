@@ -116,155 +116,188 @@
       </div>
     </section>
 
-    <section class="pdf-section">
-      <h2>Documento del Proyecto</h2>
-      <p>Consulta o descarga el documento completo del proyecto <strong>Hire-U</strong> en formato PDF.</p>
+    <!-- 📘 DOCUMENTO DEL PROYECTO -->
+<section class="card-section">
+  <h2>Documento del Proyecto</h2>
 
-      <div class="pdf-viewer">
-        <iframe src="img/Documento 2.0.pdf" title="Documento PDF Hire-U"></iframe>
-      </div>
+  <p>
+    Consulta o descarga el documento completo del proyecto
+    <strong>Hire-U</strong>.
+  </p>
 
-      <a href="img/Documento 2.0.pdf" target="_blank" class="pdf-btn">Ver o Descargar PDF</a>
-    </section>
-<section class="mer-section">
+  <div class="pdf-viewer">
+    <iframe src="img/Documento 2.0.pdf"></iframe>
+  </div>
+
+  <a href="img/Documento 2.0.pdf" target="_blank" class="main-btn">
+    Ver o Descargar PDF
+  </a>
+</section>
+
+<!-- 🗂️ MODELO ENTIDAD RELACIÓN -->
+<section class="card-section">
   <h2>Modelo Entidad-Relación</h2>
-  <p>Visualiza el modelo entidad-relación del proyecto <strong>Hire-U</strong>, el cual representa la estructura y relaciones de la base de datos.</p>
-  <div class="mer-container">
-    <img src="img/Modelo ER.png" alt="Modelo Entidad Relación Hire-U">
+
+  <p>
+    Representación de la estructura y relaciones de la base de datos.
+  </p>
+
+  <div class="image-container">
+    <img src="img/Modelo ER.png" alt="Modelo ER">
   </div>
 </section>
 
-<style>
-/* 🧩 Estilos MER */
-.mer-section {
-  text-align: center;
-  margin: 60px auto;
-  padding: 40px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  max-width: 1000px;
-}
-.mer-section h2 {
-  color: #ea7b1a;
-  margin-bottom: 10px;
-}
-.mer-section p {
-  color: #666;
-  margin-bottom: 25px;
-}
-.mer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: auto;
-}
-.mer-container img {
-  width: 90%;
-  max-width: 1200px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  transition: transform 0.3s;
-}
-.mer-container img:hover {
-  transform: scale(1.03);
-}
-</style>
+<!-- 🧩 DIAGRAMA DE CLASES -->
+<section class="card-section">
+  <h2>Diagrama de Clases</h2>
 
-    <section class="video-section">
-      <h4>Video speech</h4>
-      <video width="800" height="400" controls>
-        <source src="img/Video.mp4" type="video/mp4">
-      </video>
-    </section>
-  </main>
+  <p>
+    Visualización UML de las clases utilizadas en el sistema Hire-U.
+  </p>
 
-  <section class="diccionario-section">
-    <h2>Diccionario de Datos</h2>
-    <p>Consulta el diccionario de datos del proyecto <strong>Hire-U</strong> para conocer las tablas, columnas y descripciones.</p>
-    <button onclick="location.href='hireu.html'" class="btn-diccionario">Ver Diccionario de Datos</button>
-  </section>
+  <div class="image-container">
+    <img src="img/DiagramaClases.png" alt="Diagrama de Clases">
+  </div>
+</section>
 
-  <style>
-  /* 👥 Estilos para sección Equipo */
-  .equipo {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  .equipo h2 {
-    color: #ea7b1a;
-    margin-bottom: 15px;
-  }
-  .equipo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-  }
-  .equipo-grid figure {
-    background: #fff;
-    border-radius: 12px;
-    padding: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  }
-  .equipo-grid img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  .equipo-grid figcaption {
-    margin-top: 8px;
-    color: #666;
-    font-weight: 600;
-  }
+<!-- 🗄️ SCRIPT BASE DE DATOS -->
+<section class="card-section">
+  <h2>Script de Base de Datos</h2>
 
-  /* 📘 Estilos Diccionario (compacto) */
-  .diccionario-section {
-    text-align: center;
-    margin: 50px auto;
-    padding: 30px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    max-width: 700px;
-  }
-  .diccionario-section h2 { color: #ea7b1a; margin-bottom: 10px; }
-  .diccionario-section p { color: #666; margin-bottom: 20px; }
-  .btn-diccionario {
-    background: #ea7b1a; color: #fff; border: none;
-    padding: 12px 24px; border-radius: 8px; cursor: pointer;
-    transition: 0.3s;
-  }
-  .btn-diccionario:hover { background: #cf6b15; transform: scale(1.05); }
-  </style>
+  <p>
+    Consulta el script SQL utilizado para crear la base de datos.
+  </p>
 
-  <footer class="site-footer">
-    <div>
-      <p>Proyecto Hire-U — Universidad San Buenaventura — Autores: Andrés Cardozo, Andrés F. Martínez, Andrés F. Quintero,Sebastian Rodriguez.</p>
-    </div>
-  </footer>
-
-  <div id="imgModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg" alt="">
+  <div class="pdf-viewer">
+    <iframe src="img/ScriptBD.pdf"></iframe>
   </div>
 
-  <script>
-    const modal = document.getElementById("imgModal");
-    const modalImg = document.getElementById("modalImg");
-    const closeBtn = document.querySelector(".close");
+  <a href="img/ScriptBD.pdf" target="_blank" class="main-btn">
+    Ver Script SQL
+  </a>
+</section>
 
-    document.querySelectorAll("img").forEach(img => {
-      img.addEventListener("click", () => {
-        modal.style.display = "flex";
-        modalImg.src = img.src;
-        modalImg.alt = img.alt || "imagen ampliada";
-      });
-    });
+<!-- 🎥 VIDEO SPEECH -->
+<section class="card-section video-section">
+  <h2>Video Speech</h2>
 
-    closeBtn.onclick = () => { modal.style.display = "none"; };
-    modal.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
-  </script>
-</body>
-</html>
+  <video controls>
+    <source src="img/Video.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- 📚 DICCIONARIO DE DATOS -->
+<section class="card-section">
+  <h2>Diccionario de Datos</h2>
+
+  <p>
+    Consulta las tablas, atributos y relaciones de la base de datos.
+  </p>
+
+  <button onclick="location.href='hireu.html'" class="main-btn">
+    Ver Diccionario de Datos
+  </button>
+</section>
+
+<style>
+
+/* 🌐 SECCIONES GENERALES */
+.card-section{
+  text-align:center;
+  margin:60px auto;
+  padding:40px;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  max-width:1100px;
+}
+
+.card-section h2{
+  color:#ea7b1a;
+  margin-bottom:15px;
+}
+
+.card-section p{
+  color:#666;
+  margin-bottom:25px;
+  line-height:1.6;
+}
+
+/* 🖼️ CONTENEDOR IMÁGENES */
+.image-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow-x:auto;
+}
+
+.image-container img{
+  width:90%;
+  max-width:1200px;
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+
+.image-container img:hover{
+  transform:scale(1.02);
+}
+
+/* 📄 PDF */
+.pdf-viewer{
+  width:100%;
+  height:600px;
+  margin-bottom:20px;
+}
+
+.pdf-viewer iframe{
+  width:100%;
+  height:100%;
+  border:none;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* 🔘 BOTONES */
+.main-btn{
+  display:inline-block;
+  background:#ea7b1a;
+  color:#fff;
+  text-decoration:none;
+  border:none;
+  padding:14px 28px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+  font-weight:600;
+}
+
+.main-btn:hover{
+  background:#cf6b15;
+  transform:scale(1.05);
+}
+
+/* 🎥 VIDEO */
+.video-section video{
+  width:100%;
+  max-width:900px;
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* 📱 RESPONSIVE */
+@media(max-width:768px){
+
+  .card-section{
+    padding:20px;
+  }
+
+  .pdf-viewer{
+    height:400px;
+  }
+
+}
+
+</style>
 
 
